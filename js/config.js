@@ -2,10 +2,10 @@
 //  ВСЕ ДАННЫЕ КЛИНИКИ — меняешь только этот файл + картинки в /img
 //  Всё, что помечено // ЗАМЕНИТЬ — проверить у клиники перед запуском
 //
-//  ВАЖНО (Турция): регламент Sağlık Hizmetlerinde Tanıtım ve
-//  Bilgilendirme Faaliyetleri Hakkında Yönetmelik запрещает
-//  отзывы пациентов, рейтинги, фото «до/после», цены, скидки,
-//  «лучший», «№1» и гарантии результата. Поэтому этих блоков нет.
+//  ВАЖНО (Türkiye): Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme
+//  Faaliyetleri Hakkında Yönetmelik — Resmî Gazete 12.11.2025,
+//  sayı 33075. Отзывы/рейтинги, «до/после», цены, скидки, «лучший»,
+//  «№1» и гарантии результата не используем. Поэтому этих блоков нет.
 // ============================================================
 export const CONFIG = {
   isDemo: true, // true = noindex + аккуратная демо-плашка (перед запуском поменять на false)
@@ -155,10 +155,10 @@ export const CONFIG = {
   texts: {
     tr: {
       metaTitle: "Başakşehir Diş Kliniği | Kamerdent – İmplant, Zirkonyum, Ortodonti",
-      metaDesc: "Başakşehir Kayabaşı'nda ağız ve diş sağlığı polikliniği. İmplant, zirkonyum kaplama, ortodonti, çocuk diş hekimliği. WhatsApp'tan randevu alın.",
+      metaDesc: "Başakşehir Kayabaşı'nda ağız ve diş sağlığı polikliniği. İmplant, zirkonyum kaplama, ortodonti, çocuk diş hekimliği. WhatsApp'tan bilgi alın.",
       nav: ["Tedaviler", "Hekimler", "Klinik", "SSS", "İletişim"],
       skip: "İçeriğe geç", menu: "Menü",
-      call: "Hemen Ara", wa: "WhatsApp'tan Randevu", waShort: "WhatsApp", route: "Yol Tarifi", book: "Randevu",
+      call: "Hemen Ara", wa: "WhatsApp'tan Bilgi Alın", waShort: "WhatsApp", route: "Yol Tarifi", book: "Bilgi alın",
       heroEyebrow: "Başakşehir · Kayabaşı · Adım İstanbul",
       heroTitle: "Başakşehir'de güven veren, konforlu",
       heroTitleAccent: "diş hekimliği",
@@ -174,7 +174,7 @@ export const CONFIG = {
       duration: "Ortalama süre", sessions: "Seans", details: "Detayları gör", info: "WhatsApp'tan sor",
       steps: "Süreç nasıl işler?",
       waTreat: "Merhaba, {t} hakkında bilgi almak istiyorum.",
-      waDoctor: "Merhaba, {d} ile randevu almak istiyorum.",
+      waDoctor: "Merhaba, {d} hakkında bilgi almak istiyorum.",
       whyEyebrow: "Klinik", whyTitle: "Neden Kamerdent?",
       whySub: "Tedavinin her adımında ne olduğunu bilmeniz bizim için önemli. Kullandığımız yöntemleri ve çalışma biçimimizi açıkça anlatıyoruz.",
       why: [
@@ -187,7 +187,7 @@ export const CONFIG = {
       ],
       docEyebrow: "Ekip", docTitle: "Hekimlerimiz",
       docSub: "Tedavinizi planlayan ve yürüten hekimleri tanıyın.",
-      langs: "Diller", doctorBook: "Randevu al",
+      langs: "Diller", doctorBook: "Bilgi alın",
       procEyebrow: "Süreç", procTitle: "Tedavi nasıl ilerler?",
       proc: [["WhatsApp'tan yazın", "Birkaç dakikada size dönüş yapalım."], ["Muayene ve tarama", "Dijital tarama ile detaylı inceleme."], ["Kişisel plan", "Seçenekleri ve süreyi açıkça konuşalım."], ["Tedavi ve kontrol", "Tedavi sonrası düzenli takip."]],
       quizEyebrow: "Yönlendirme", quizTitle: "Hangi tedavi bana uygun?", quizSub: "3 kısa soruyu yanıtlayın, hekimimiz size dönsün.",
@@ -205,22 +205,22 @@ export const CONFIG = {
       localTitle: "Başakşehir ve çevresinde diş sağlığı",
       localText: "Kliniğimiz Başakşehir Kayabaşı'nda, Kayaşehir Bulvarı üzerindeki Adım İstanbul Sitesi A-1 Blok'ta yer alır. Başakşehir, Kayabaşı, Bahçeşehir, Kayaşehir, İkitelli ve çevre mahallelerden gelen hastalarımızı kabul ediyoruz. Toplu taşıma duraklarına yakınız; site otoparkından yararlanabilirsiniz.",
       localAreas: ["Başakşehir", "Kayabaşı", "Bahçeşehir", "Kayaşehir", "İkitelli", "Şahintepe"],
-      contactTitle: "İletişim", contactSub: "Randevu ve sorularınız için yazın veya arayın.",
+      contactTitle: "İletişim", contactSub: "Örnek sayfa ve sorularınız için yazın veya arayın.",
       hoursT: "Çalışma saatleri", days: ["Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"],
       mapTitle: "Kamerdent konumu",
       footerNav: "Menü", footerTreat: "Tedaviler", footerContact: "İletişim",
       disclaimer: "Bu sitedeki bilgiler yalnızca bilgilendirme amaçlıdır. Tanı ve tedavi için hekiminize başvurunuz.",
       kvkkTitle: "KVKK Aydınlatma Metni",
       kvkkText: "6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında; adınız ve telefon numaranız yalnızca randevu ve bilgilendirme amacıyla, veri sorumlusu sıfatıyla kliniğimiz tarafından işlenir. Bu site verilerinizi sunucuda saklamaz; form bilgileri doğrudan sizin WhatsApp uygulamanız üzerinden kliniğe iletilir. Kanunun 11. maddesi kapsamındaki haklarınız için kliniğimizle iletişime geçebilirsiniz.",
-      demoNotice: "Demo önizleme · Fotoğraflar ve hekim kadrosu kliniğinize göre güncellenir",
+      demoNotice: "Demo önizleme · Bu örnek tasarım; bilgiler kliniğinize göre güncellenir",
       close: "Kapat", rights: "Tüm hakları saklıdır."
     },
     en: {
       metaTitle: "Başakşehir Dental Clinic | Kamerdent – Implants, Zirconia, Orthodontics",
-      metaDesc: "Dental clinic in Kayabaşı, Başakşehir. Implants, zirconia crowns, orthodontics, pediatric dentistry. Book an appointment on WhatsApp.",
+      metaDesc: "Dental clinic in Kayabaşı, Başakşehir. Implants, zirconia crowns, orthodontics, pediatric dentistry. Get information on WhatsApp.",
       nav: ["Treatments", "Doctors", "Clinic", "FAQ", "Contact"],
       skip: "Skip to content", menu: "Menu",
-      call: "Call Now", wa: "Book on WhatsApp", waShort: "WhatsApp", route: "Directions", book: "Book",
+      call: "Call Us", wa: "Get Info on WhatsApp", waShort: "WhatsApp", route: "Directions", book: "Get info",
       heroEyebrow: "Başakşehir · Kayabaşı · Adım İstanbul",
       heroTitle: "Modern, reassuring dental care in",
       heroTitleAccent: "Başakşehir",
@@ -236,7 +236,7 @@ export const CONFIG = {
       duration: "Average duration", sessions: "Visits", details: "See details", info: "Ask on WhatsApp",
       steps: "How does it work?",
       waTreat: "Hello, I would like information about {t}.",
-      waDoctor: "Hello, I would like to book an appointment with {d}.",
+      waDoctor: "Hello, I would like information about {d}.",
       whyEyebrow: "The clinic", whyTitle: "Why Kamerdent?",
       whySub: "You should know what happens at every step. We explain our methods and the way we work in plain language.",
       why: [
@@ -249,7 +249,7 @@ export const CONFIG = {
       ],
       docEyebrow: "Team", docTitle: "Our Doctors",
       docSub: "Meet the dentists who plan and carry out your treatment.",
-      langs: "Languages", doctorBook: "Book",
+      langs: "Languages", doctorBook: "Get info",
       procEyebrow: "The process", procTitle: "How treatment works",
       proc: [["Message us", "We reply within minutes."], ["Exam and scan", "Detailed digital examination."], ["Personal plan", "We discuss options and timing clearly."], ["Treatment and follow-up", "Regular check-ups after treatment."]],
       quizEyebrow: "Guidance", quizTitle: "Which treatment suits me?", quizSub: "Answer 3 quick questions and our dentist will get back to you.",
@@ -267,22 +267,22 @@ export const CONFIG = {
       localTitle: "Dental care in Başakşehir and nearby",
       localText: "Our clinic is located in Kayabaşı, Başakşehir, inside Adım İstanbul (A-1 Block), around 25–30 minutes from Istanbul Airport. We welcome patients from Başakşehir, Kayabaşı, Bahçeşehir, Kayaşehir, İkitelli and nearby neighbourhoods, with public transport and on-site parking available.",
       localAreas: ["Başakşehir", "Kayabaşı", "Bahçeşehir", "Kayaşehir", "İkitelli", "Şahintepe"],
-      contactTitle: "Contact", contactSub: "Write or call us for appointments and questions.",
+      contactTitle: "Contact", contactSub: "Write or call us about this sample page and your questions.",
       hoursT: "Opening hours", days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
       mapTitle: "Kamerdent location",
       footerNav: "Menu", footerTreat: "Treatments", footerContact: "Contact",
       disclaimer: "Information on this site is for general purposes only. Please consult your dentist for diagnosis and treatment.",
       kvkkTitle: "Privacy Notice (KVKK)",
       kvkkText: "Under Turkish Law No. 6698, your name and phone number are processed by our clinic as data controller solely for appointments and information. This website does not store your data; the form is sent directly from your own WhatsApp app to the clinic. Contact us to exercise your rights under Article 11.",
-      demoNotice: "Demo preview · Photos and medical team will be updated for your clinic",
+      demoNotice: "Demo preview · Sample design; details will be updated for your clinic",
       close: "Close", rights: "All rights reserved."
     },
     ar: {
       metaTitle: "عيادة أسنان باشاك شهير | كامردنت – زراعة، زركونيوم، تقويم",
-      metaDesc: "عيادة أسنان في كاياباشي، باشاك شهير. زراعة، تيجان زركونيوم، تقويم، طب أسنان الأطفال. احجز عبر واتساب.",
+      metaDesc: "عيادة أسنان في كاياباشي، باشاك شهير. زراعة، تيجان زركونيوم، تقويم، طب أسنان الأطفال. اطلب المعلومة عبر واتساب.",
       nav: ["العلاجات", "الأطباء", "العيادة", "الأسئلة", "تواصل"],
       skip: "تخطَّ إلى المحتوى", menu: "القائمة",
-      call: "اتصل الآن", wa: "احجز عبر واتساب", waShort: "واتساب", route: "الاتجاهات", book: "احجز",
+      call: "اتصل بنا", wa: "اطلب المعلومة عبر واتساب", waShort: "واتساب", route: "الاتجاهات", book: "اطلب المعلومة",
       heroEyebrow: "باشاك شهير · كاياباشي · آديم إسطنبول",
       heroTitle: "رعاية أسنان حديثة ومريحة في",
       heroTitleAccent: "باشاك شهير",
@@ -298,7 +298,7 @@ export const CONFIG = {
       duration: "المدة التقريبية", sessions: "الجلسات", details: "عرض التفاصيل", info: "اسأل عبر واتساب",
       steps: "كيف تتم العملية؟",
       waTreat: "مرحبًا، أود الاستفسار عن {t}.",
-      waDoctor: "مرحبًا، أود حجز موعد مع {d}.",
+      waDoctor: "مرحبًا، أود الاستفسار عن {d}.",
       whyEyebrow: "العيادة", whyTitle: "لماذا كامردنت؟",
       whySub: "يهمنا أن تعرف ما يحدث في كل خطوة. نشرح طرق عملنا بوضوح.",
       why: [
@@ -311,7 +311,7 @@ export const CONFIG = {
       ],
       docEyebrow: "الفريق", docTitle: "أطباؤنا",
       docSub: "تعرّف على الأطباء الذين يخططون علاجك وينفذونه.",
-      langs: "اللغات", doctorBook: "احجز",
+      langs: "اللغات", doctorBook: "اطلب المعلومة",
       procEyebrow: "المسار", procTitle: "كيف يسير العلاج؟",
       proc: [["راسلنا", "نرد خلال دقائق."], ["الفحص والمسح", "فحص رقمي مفصل."], ["خطة شخصية", "نناقش الخيارات والمدة بوضوح."], ["العلاج والمتابعة", "مراجعات منتظمة بعد العلاج."]],
       quizEyebrow: "إرشاد", quizTitle: "ما العلاج المناسب لي؟", quizSub: "أجب عن 3 أسئلة قصيرة وسيتواصل معك طبيبنا.",
@@ -329,14 +329,14 @@ export const CONFIG = {
       localTitle: "رعاية الأسنان في باشاك شهير والمناطق المجاورة",
       localText: "تقع عيادتنا في كاياباشي، باشاك شهير، داخل مجمع آديم إسطنبول (بلوك A-1)، على بُعد نحو 25–30 دقيقة من مطار إسطنبول. نستقبل المرضى من باشاك شهير وكاياباشي وباهجة شهير وكاياشهير وإيكيتيلي والأحياء المجاورة، مع قربنا من المواصلات العامة وتوفر موقف سيارات في المبنى.",
       localAreas: ["باشاك شهير", "كاياباشي", "باهجة شهير", "كاياشهير", "إيكيتيلي", "شاهين تبه"],
-      contactTitle: "تواصل معنا", contactSub: "راسلنا أو اتصل بنا للمواعيد والاستفسارات.",
+      contactTitle: "تواصل معنا", contactSub: "راسلنا أو اتصل بنا للاستفسار عن هذه الصفحة التجريبية.",
       hoursT: "ساعات العمل", days: ["الأحد", "الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"],
       mapTitle: "موقع كامردنت",
       footerNav: "القائمة", footerTreat: "العلاجات", footerContact: "تواصل",
       disclaimer: "المعلومات في هذا الموقع لأغراض التوعية فقط. يرجى استشارة طبيبك للتشخيص والعلاج.",
       kvkkTitle: "إشعار الخصوصية (KVKK)",
       kvkkText: "وفقًا للقانون التركي رقم 6698، تتم معالجة اسمك ورقم هاتفك من قبل عيادتنا فقط لغرض المواعيد والمعلومات. لا يخزن هذا الموقع بياناتك؛ يتم إرسال النموذج مباشرة من تطبيق واتساب الخاص بك إلى العيادة.",
-      demoNotice: "معاينة تجريبية · سيتم تحديث الصور وفريق الأطباء وفقًا لعيادتكم",
+      demoNotice: "معاينة تجريبية · تصميم نموذجي؛ سيتم تحديث البيانات وفقًا لعيادتكم",
       close: "إغلاق", rights: "جميع الحقوق محفوظة."
     }
   }
