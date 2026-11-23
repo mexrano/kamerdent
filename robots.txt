@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Демо-версия закрыта от индексации через meta robots (isDemo: true в js/config.js).
+# После снятия noindex расскомментируйте Sitemap.
+# Sitemap: https://kamerdent.com/sitemap.xml
