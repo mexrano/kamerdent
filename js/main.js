@@ -298,12 +298,12 @@ function renderQuiz() {
       onclick: () => { quiz[key] = idx; quiz.step++; renderQuiz(); }
     }, o)));
 
-  if (quiz.step === 0) {
-    body.replaceChildren(
-      h("h3", {}, t.q1),
-      opts(t.q1o, "a"),
-      quiz.a !== null ? nav(t.next, () => { quiz.step = 1; renderQuiz(); }) : null
-    );
+if (quiz.step === 0) {
+  body.replaceChildren(
+    h("h3", {}, t.q1),
+    opts(t.q1o, "a")
+  );
+}
   } else if (quiz.step === 1) {
     body.replaceChildren(
       h("h3", {}, t.q2),
