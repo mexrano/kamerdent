@@ -298,17 +298,13 @@ function renderQuiz() {
       onclick: () => { quiz[key] = idx; quiz.step++; renderQuiz(); }
     }, o)));
 
-
-
-
-  
   if (quiz.step === 0) {
     body.replaceChildren(
       h("h3", {}, t.q1),
       opts(t.q1o, "a"),
       quiz.a !== null ? nav(t.next, () => { quiz.step = 1; renderQuiz(); }) : ""
     );
-  } else if (quiz.step === 1) { { else if (quiz.step === 1) {
+  } else if (quiz.step === 1) {
     body.replaceChildren(
       h("h3", {}, t.q2),
       opts(t.q2o, "b"),
@@ -317,7 +313,7 @@ function renderQuiz() {
   } else if (quiz.step === 2) {
     const err = h("p", { class: "err", role: "alert" });
     const name = h("input", { type: "text", placeholder: t.name, "aria-label": t.name, maxlength: 60, autocomplete: "name", value: quiz.name, oninput: (e) => (quiz.name = e.target.value) });
-    const tel = h("input", { type: "tel", placeholder: t.tel, "aria-label": t.tel, maxlength: 20, autocomplete: "tel", inputmode: "tel", value: quiz.tel, oninput: (e) => (quiz.tel = e.target.value) });
+    const tel = h("input", { type: "tel", dir: "ltr", placeholder: t.tel, "aria-label": t.tel, maxlength: 20, autocomplete: "tel", inputmode: "tel", value: quiz.tel, oninput: (e) => (quiz.tel = e.target.value) });
     const ck = h("input", { type: "checkbox", id: "kvkk", onchange: (e) => (quiz.ok = e.target.checked) });
     ck.checked = quiz.ok;
     const [pre, post] = t.kvkk.split("{link}");
