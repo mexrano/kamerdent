@@ -301,7 +301,8 @@ function renderQuiz() {
 if (quiz.step === 0) {
   body.replaceChildren(
     h("h3", {}, t.q1),
-    opts(t.q1o, "a")
+    opts(t.q1o, "a"),
+    quiz.a !== null ? nav(t.next, () => { quiz.step = 1; renderQuiz(); }) : null
   );
 }
   } else if (quiz.step === 1) {
